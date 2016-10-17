@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jh.gmtv.ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_sy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bt_home"
+            style="@style/ButtonDown"
+            android:checked="true"
+            android:drawableTop="@drawable/btn_home"
+            android:text="@string/recommend" />
+
+        <RadioButton
+            android:id="@+id/bt_column"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_column"
+            android:text="@string/column" />
+
+        <RadioButton
+            android:id="@+id/bt_live"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_live"
+            android:text="@string/live" />
+
+        <RadioButton
+            android:id="@+id/bt_my"
+            style="@style/ButtonDown"
+            android:drawableTop="@drawable/btn_my"
+            android:text="@string/my" />
+
+    </RadioGroup>
+</LinearLayout>
